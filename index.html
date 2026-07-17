@@ -388,17 +388,27 @@
             <div class="col-lg-4">
                 <div class="card project-card h-100 shadow">
                     <!-- TIP: Take a screenshot of your memory haul app, save it as "memory-haul.png" in your images folder -->
-                    <img src="Landing Page.jpg"
-                        class="card-img-top"
-                        alt="The Memory Haul">
-                    
-                    <img src="Uploading Page.jpg"
-                        class="card-img-top"
-                        alt="The Memory Haul">
-
-                    <img src="sample.jpg"
-                        class="card-img-top"
-                        alt="The Memory Haul">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Landing Page.jpg" class="d-block w-100" alt="The Memory Haul">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Uploading Page.jpg" class="d-block w-100" alt="The Memory Haul">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sample.jpg" class="d-block w-100" alt="The Memory Haul">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
 
                     <div class="card-body">
                         <h4 class="card-title">
@@ -406,7 +416,7 @@
                         </h4>
 
                         <p class="card-text">
-                            A private, interactive multi-user gallery and timeline application. Features password-protected spaces, bulk media uploads, automatic monthly sorting, deletion, and dynamic custom themes.
+                            A private, interactive multi-user gallery and timeline application. Features password protected spaces, bulk media uploads, automatic monthly sorting, deletion, and dynamic custom themes.
                         </p>
 
                         <span class="badge bg-warning text-dark">
@@ -431,7 +441,7 @@
                             Live Demo
                         </a>
                         <!-- Replace the '#' with your actual GitHub repository link -->
-                        <a href="https://github.com/LimPogi/your-repo-name"
+                        <a href="https://github.com/LimPogi/Gallery"
                             target="_blank"
                             class="btn btn-outline-dark flex-grow-1">
                             GitHub
