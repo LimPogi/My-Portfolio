@@ -5,72 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Ronan Limjoco</title>
+    
+    <!-- Theme pre-loader -->
     <script>
-        // Apply saved theme before first paint to avoid a flash of the wrong theme
         (function () {
             var saved = localStorage.getItem('theme');
             var preferred = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', preferred);
         })();
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                John Ronan
-            </a>
+            <a class="navbar-brand fw-bold" href="#">John Ronan</a>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse"
-                id="navbar">
+            <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active"
-                            href="#home">
-                            Home
-                        </a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#about">
-                            About
-                        </a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#skills">
-                            Skills
-                        </a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#projects">
-                            Projects
-                        </a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#experience">
-                            Experience
-                        </a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#contact">
-                            Contact
-                        </a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <button id="themeToggle" class="theme-toggle ms-lg-3" type="button" aria-label="Toggle dark mode" title="Toggle dark / light mode">
@@ -80,616 +65,503 @@
         </div>
     </nav>
 
-    <section id="home"
-        class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <span class="hero-subtitle">
-                        Hello, I'm
-                    </span>
+                    <span class="hero-subtitle">Hello, I'm</span>
                     <h1 class="display-4 fw-bold mt-3">
-                        John Ronan
-                        <br>
-                        Limjoco
+                        John Ronan<br>Limjoco
                     </h1>
                     <h3 class="text-primary mt-3">
-                        Junior Frontend Developer
+                        Frontend Developer | Aspiring Full Stack Developer
                     </h3>
-                    <p class="lead mt-4">
-                        Information Systems graduate passionate about
-                        building responsive, modern, and user-friendly
-                        web applications.
 
-                        I enjoy creating websites using HTML, CSS,
-                        Bootstrap, JavaScript, React, and C#.
+                    <p class="lead mt-4">
+                        I'm an Information Systems graduate passionate about building modern, responsive, and scalable web applications. 
+                        I specialize in React.js, Tailwind CSS, Node.js, Express.js, REST APIs, JWT Authentication, and SQL databases while continuously expanding my knowledge of modern web technologies.
                     </p>
                     <div class="mt-4">
-                        <a href="John Ronan Limjoco (RESUME).pdf"
-                            class="btn btn-primary btn-lg me-3"
-                            download>
+                        <a href="John Ronan Limjoco (RESUME).pdf" class="btn btn-primary btn-lg me-3" download>
                             Download Resume
                         </a>
-                        <a href="#contact"
-                            class="btn btn-outline-dark btn-lg">
+                        <a href="#contact" class="btn btn-outline-dark btn-lg">
                             Contact Me
                         </a>
                     </div>
                     <div class="social-icons mt-5">
-                        <a href="https://github.com/LimPogi" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/LimPogi" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                             <i class="bi bi-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/john-ronan-limjoco-a0085b400/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/john-ronan-limjoco-a0085b400/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="https://www.facebook.com/LimjocoJohn6" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/LimjocoJohn6" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWSZgJNcmQqktngkqfspxDZQWGmJRbgDGNlwXMpRzKHzzmfqNGJcXqgjsvTlQNRkcwPMT" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:cirolimjoco@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send Email">
                             <i class="bi bi-envelope-fill"></i>
                         </a>
                     </div>
                 </div>
-                <!-- RIGHT -->
                 <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                    <img src="picture.jpg"
-                        class="img-fluid profile-image"
-                        alt="John Ronan Limjoco">
+                    <img src="picture.jpg" class="img-fluid profile-image" alt="John Ronan Limjoco">
                 </div>
             </div>
         </div>
     </section>
 
-<section id="about" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">
-                About Me
-            </h2>
-            <p class="section-subtitle">
-                Get to know me better.
-            </p>
-        </div>
-
-        <div class="row align-items-center">
-            <div class="col-lg-5 text-center mb-4">
-                <img src="2x2.png"
-                    alt="Profile"
-                    class="img-fluid about-image">
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better.</p>
             </div>
 
-            <div class="col-lg-7">
-                <h3 class="fw-bold mb-4">
-                    Junior Frontend Developer
-                </h3>
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <img src="2x2.png" alt="Profile picture" class="img-fluid about-image">
+                </div>
 
-                <p>
-                    Hi! I'm <strong>John Ronan C. Limjoco</strong>,
-                    an Information Systems graduate with a passion for
-                    creating modern and responsive web applications.
-                </p>
+                <div class="col-lg-7">
+                    <h3 class="fw-bold mb-4">Junior Frontend Developer</h3>
 
-                <p>
-                    During my internship as an Associate System Developer, 
-                    I gained foundational knowledge of C#, ASP.NET MVC, and 
-                    software development practices through training, discussions, 
-                    and team activities. I became familiar with the software 
-                    development lifecycle, object-oriented programming concepts, 
-                    and collaborative development workflows while strengthening 
-                    my problem-solving and technical skills.
-                </p>
+                    <p>
+                        Hi! I'm <strong>John Ronan C. Limjoco</strong>, an Information Systems graduate with a passion for creating modern and responsive web applications.
+                    </p>
 
-                <p>
-                    I also worked as a Content Moderator at
-                    Teleperformance, where I developed strong attention
-                    to detail, problem-solving skills, and the ability
-                    to work under pressure.
-                </p>
+                    <p>
+                        During my internship as an Associate System Developer, I gained foundational knowledge of C#, ASP.NET MVC, and software development practices through training, discussions, and team activities. I became familiar with the software development lifecycle, object-oriented programming concepts, and collaborative development workflows while strengthening my problem-solving and technical skills.
+                    </p>
 
-                <p>
-                    I continuously improve my skills by building personal
-                    projects and learning modern web technologies.
-                </p>
+                    <p>
+                        I also worked as a Content Moderator at Teleperformance, where I developed strong attention to detail, problem-solving skills, and the ability to work under pressure.
+                    </p>
 
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <ul class="list-unstyled info-list">
-                            <li>
-                                <strong>Name:</strong>
-                                John Ronan Limjoco
-                            </li>
-                            <li>
-                                <strong>Email:</strong>
-                                cirolimjoco@gmail.com
-                            </li>
-                            <li>
-                                <strong>Phone:</strong>
-                                0919-316-4052
-                            </li>
-                        </ul>
+                    <p>
+                        I continuously improve my skills by building personal projects and learning modern web technologies.
+                    </p>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled info-list">
+                                <li><strong>Name:</strong> John Ronan Limjoco</li>
+                                <li><strong>Email:</strong> cirolimjoco@gmail.com</li>
+                                <li><strong>Phone:</strong> 0919-316-4052</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-unstyled info-list">
+                                <li><strong>Location:</strong> Pampanga, Philippines</li>
+                                <li><strong>Education:</strong> BS Information Systems</li>
+                                <li><strong>Status:</strong> Open to Work</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="col-md-6">
-                        <ul class="list-unstyled info-list">
-                            <li>
-                                <strong>Location:</strong>
-                                Pampanga, Philippines
-                            </li>
-                            <li>
-                                <strong>Education:</strong>
-                                BS Information Systems
-                            </li>
-                            <li>
-                                <strong>Status:</strong>
-                                Open to Work
-                            </li>
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies that I use.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-window fs-1"></i>
+                        <h4 class="mt-3">Frontend</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li>React.js (Vite)</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap 5</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="skills" class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">
-                Technical Skills
-            </h2>
-            <p class="section-subtitle">
-                Technologies that I use.
-            </p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="skill-card">
-                    <i class="bi bi-window fs-1"></i>
-                    <h4 class="mt-3">
-                        Frontend
-                    </h4>
-                    <ul class="list-unstyled mt-3">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap 5</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-server fs-1"></i>
+                        <h4 class="mt-3">Backend</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>REST API</li>
+                            <li>JWT Authentication</li>
+                            <li>bcrypt</li>
+                            <li>C#</li>
+                            <li>ASP.NET MVC</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="skill-card">
-                    <i class="bi bi-server fs-1"></i>
-                    <h4 class="mt-3">
-                        Backend
-                    </h4>
-                    <ul class="list-unstyled mt-3">
-                        <li>C#</li>
-                        <li>ASP.NET MVC</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-database fs-1"></i>
+                        <h4 class="mt-3">Database</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li>SQL Server</li>
+                            <li>MySQL</li>
+                            <li>Supabase</li>
+                            <li>Render Database</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="skill-card">
-                    <i class="bi bi-database fs-1"></i>
-                    <h4 class="mt-3">
-                        Database
-                    </h4>
-
-                    <ul class="list-unstyled mt-3">
-                        <li>SQL Server</li>
-                        <li>MySQL</li>
-                        <li>Supabase</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="skill-card">
-                    <i class="bi bi-tools fs-1"></i>
-                    <h4 class="mt-3">
-                        Tools
-                    </h4>
-
-                    <ul class="list-unstyled mt-3">
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-tools fs-1"></i>
+                        <h4 class="mt-3">Tools</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Netlify</li>
+                            <li>Render</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="projects" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">
-                My Projects
-            </h2>
-            <p class="section-subtitle">
-                Some projects that I've built.
-            </p>
-        </div>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Some projects that I've built.</p>
+            </div>
 
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card project-card h-100 shadow">
-                    <div id="carouselPOS" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                            <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <div class="row g-4">
+                <!-- FEATURED PROJECT 1: Employee Attendance Tracker -->
+                <div class="col-lg-4">
+                    <div class="card project-card h-100 shadow border-primary border-2">
+                        <div id="carouselAttendance" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselAttendance" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="attendancetracker/employee/employee login.jpg" class="d-block w-100" alt="Attendance Tracker - employee login screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/employee/employee dashboard.jpg" class="d-block w-100" alt="Attendance Tracker - employee dashboard screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin login.jpg" class="d-block w-100" alt="Attendance Tracker - admin login screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin dashboard.jpg" class="d-block w-100" alt="Attendance Tracker - admin dashboard screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin create acc.jpg" class="d-block w-100" alt="Attendance Tracker - admin create account screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin analytics.jpg" class="d-block w-100" alt="Attendance Tracker - admin analytics screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin Leaves.jpg" class="d-block w-100" alt="Attendance Tracker - admin leaves screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin holiday.jpg" class="d-block w-100" alt="Attendance Tracker - admin holiday screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="attendancetracker/admin/admin audit log.jpg" class="d-block w-100" alt="Attendance Tracker - admin audit log screen">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAttendance" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAttendance" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
 
-                            <div class="carousel-item active">
-                                <img src="employee/emp take order.jpg" class="d-block w-100" alt="POS System - employee take order screen">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="employee/emp inventory.jpg" class="d-block w-100" alt="POS System - employee inventory screen">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="employee/emp sales.jpg" class="d-block w-100" alt="POS System - employee sales screen">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="card-title mb-0">Attendance Tracker</h4>
+                                <span class="badge bg-primary">Featured</span>
                             </div>
 
-                            <div class="carousel-item">
-                                <img src="manager/take order.jpg" class="d-block w-100" alt="POS System - manager take order screen">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="manager/inventory.jpg" class="d-block w-100" alt="POS System - manager inventory screen">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="manager/menu.jpg" class="d-block w-100" alt="POS System - manager menu screen">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="manager/sales.jpg" class="d-block w-100" alt="POS System - manager sales screen">
-                            </div>
-
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPOS" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPOS" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            POS Cafe System
-                        </h4>
-
-                        <p class="card-text">
-                            A cloud-based Point of Sale System
-                            built using React, Node.js,
-                            Express and Supabase.
-                        </p>
-
-                        <span class="badge bg-info">
-                            HTML5
-                        </span>
-
-                        <span class="badge bg-dark">
-                            CSS3
-                        </span>
-
-                        <span class="badge bg-warning text-dark">
-                            JavaScript
-                        </span>
-
-                        <span class="badge bg-success">
-                            AppWrite
-                        </span>
-
-                        <span class="badge bg-primary">
-                            jQuery
-                        </span>
-                    </div>
-
-                    <div class="card-footer bg-white border-0">
-                        <a href="https://lim-pos-system.netlify.app/"
-                            target="_blank" rel="noopener noreferrer"
-                            class="btn btn-primary">
-                            Live Demo
-                        </a>
-
-                        <a href="https://github.com/LimPogi/Basic-Pos-System"
-                            target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-dark">
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="card project-card h-100 shadow">
-                    <img src="images/tictactoe.png"
-                        class="card-img-top"
-                        alt="Tic Tac Toe">
-                    <div class="card-body">
-                        <h4>
-                            Tic Tac Toe
-                        </h4>
-                        <p>
-                            A classic two-player Tic Tac Toe game built with vanilla JavaScript, featuring win detection and a clean, responsive UI.
-                        </p>
-
-                        <span class="badge bg-info">
-                            HTML5
-                        </span>
-
-                        <span class="badge bg-secondary">
-                            JavaScript
-                        </span>
-                    </div>
-
-                    <div class="card-footer bg-white border-0">
-                        <!-- TODO: replace # with your actual live link and/or GitHub repo -->
-                        <a href="#"
-                            target="_blank" rel="noopener noreferrer"
-                            class="btn btn-primary">
-                            View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="card project-card h-100 shadow">
-                    <!-- TIP: Take a screenshot of your memory haul app, save it as "memory-haul.png" in your images folder -->
-                    <div id="carouselMemoryHaul" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="gallery/Landing Page.jpg" class="d-block w-100" alt="The Memory Haul - landing page">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="gallery/Uploading Page.jpg" class="d-block w-100" alt="The Memory Haul - uploading page">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="gallery/sample.jpg" class="d-block w-100" alt="The Memory Haul - sample gallery">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            The Memory Haul
-                        </h4>
-
-                        <p class="card-text">
-                            A private, interactive multi-user gallery and timeline application. Features password protected spaces, bulk media uploads, automatic monthly sorting, deletion, and dynamic custom themes.
-                        </p>
-
-                        <span class="badge bg-warning text-dark">
-                            JavaScript
-                        </span>
-                        <span class="badge bg-primary">
-                            jQuery
-                        </span>
-                        <span class="badge bg-success">
-                            Supabase
-                        </span>
-                        <span class="badge bg-info">
-                            HTML5
-                        </span>
-                        <span class="badge bg-dark">
-                            CSS3
-                        </span>
-                    </div>
-
-                    <div class="card-footer bg-white border-0 d-flex gap-2">
-                        <!-- Replace the '#' with your actual live Netlify link -->
-                        <a href="https://thememoryhaul.netlify.app/"
-                            target="_blank"
-                            class="btn btn-primary flex-grow-1">
-                            Live Demo
-                        </a>
-                        <!-- Replace the '#' with your actual GitHub repository link -->
-                        <a href="https://github.com/LimPogi/Gallery"
-                            target="_blank"
-                            class="btn btn-outline-dark flex-grow-1">
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="experience" class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">
-                Experience
-            </h2>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <h4>
-                    Associate System Developer (Intern)
-                </h4>
-
-                <h6 class="text-primary">
-                    Sumidenso Automotive Technologies Asia Corporation
-                </h6>
-
-                <p>
-                    • Learned C# and ASP.NET MVC
-                    <br>
-                    • Participated in software development discussions
-                    <br>
-                    • Assisted in maintaining internal applications
-                    <br>
-                    • Collaborated with developers
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>
-                    Content Moderator
-                </h4>
-
-                <h6 class="text-primary">
-                    Teleperformance Clark
-                </h6>
-
-                <p>
-                    • Reviewed Marketplace listings
-                    <br>
-                    • Ensured policy compliance
-                    <br>
-                    • Maintained quality standards
-                    <br>
-                    • Worked in a fast-paced environment
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">
-                Contact Me
-            </h2>
-
-            <p>
-                Feel free to reach out.
-            </p>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="contact-box shadow">
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <i class="bi bi-envelope-fill fs-1"></i>
-                            <h5 class="mt-3">
-                                Email
-                            </h5>
-
-                            <p>
-                                cirolimjoco@gmail.com
+                            <p class="card-text">
+                                A full-stack employee management and attendance tracking system featuring secure JWT authentication, role-based dashboards, leave management, and audit logs.
                             </p>
+
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="badge bg-primary">React (Vite)</span>
+                                <span class="badge bg-info text-dark">Tailwind CSS</span>
+                                <span class="badge bg-dark">Node.js</span>
+                                <span class="badge bg-secondary">Express</span>
+                                <span class="badge bg-warning text-dark">JWT</span>
+                                <span class="badge bg-danger">Render</span>
+                            </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <i class="bi bi-telephone-fill fs-1"></i>
-
-                            <h5 class="mt-3">
-                                Phone
-                            </h5>
-
-                            <p>
-                                0919-316-4052
-                            </p>
+                        <div class="card-footer bg-white border-0 d-flex gap-2">
+                            <a href="https://attendancetracker6.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-grow-1">Live Demo</a>
+                            <a href="https://github.com/LimPogi/AttendanceTracker" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark flex-grow-1">GitHub</a>
                         </div>
-                        <div class="col-md-4">
-                            <i class="bi bi-geo-alt-fill fs-1"></i>
-                            <h5 class="mt-3">
-                                Location
-                            </h5>
-                            <p>
-                                Pampanga, Philippines
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: POS Cafe System -->
+                <div class="col-lg-4">
+                    <div class="card project-card h-100 shadow">
+                        <div id="carouselPOS" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="employee/emp take order.jpg" class="d-block w-100" alt="POS System - employee take order screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="employee/emp inventory.jpg" class="d-block w-100" alt="POS System - employee inventory screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="employee/emp sales.jpg" class="d-block w-100" alt="POS System - employee sales screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="manager/take order.jpg" class="d-block w-100" alt="POS System - manager take order screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="manager/inventory.jpg" class="d-block w-100" alt="POS System - manager inventory screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="manager/menu.jpg" class="d-block w-100" alt="POS System - manager menu screen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="manager/sales.jpg" class="d-block w-100" alt="POS System - manager sales screen">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPOS" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselPOS" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">POS Cafe System</h4>
+                            <p class="card-text">
+                                A cloud-based Point of Sale System built using React, Node.js, Express, and Supabase.
                             </p>
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-dark">Node.js</span>
+                                <span class="badge bg-secondary">Express</span>
+                                <span class="badge bg-success">Supabase</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-white border-0 d-flex gap-2">
+                            <a href="https://lim-pos-system.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-grow-1">Live Demo</a>
+                            <a href="https://github.com/LimPogi/Basic-Pos-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark flex-grow-1">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: The Memory Haul -->
+                <div class="col-lg-4">
+                    <div class="card project-card h-100 shadow">
+                        <div id="carouselMemoryHaul" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="gallery/Landing Page.jpg" class="d-block w-100" alt="The Memory Haul - landing page">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gallery/Uploading Page.jpg" class="d-block w-100" alt="The Memory Haul - uploading page">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gallery/sample.jpg" class="d-block w-100" alt="The Memory Haul - sample gallery">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMemoryHaul" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">The Memory Haul</h4>
+                            <p class="card-text">
+                                A private, interactive multi-user gallery and timeline application featuring password-protected spaces, bulk media uploads, and dynamic custom themes.
+                            </p>
+                            <div class="d-flex flex-wrap gap-1 mb-2">
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                                <span class="badge bg-primary">jQuery</span>
+                                <span class="badge bg-success">Supabase</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-white border-0 d-flex gap-2">
+                            <a href="https://thememoryhaul.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-grow-1">Live Demo</a>
+                            <a href="https://github.com/LimPogi/Gallery" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark flex-grow-1">GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h5>
-                    John Ronan Limjoco
-                </h5>
-                <p>
-                    Junior Frontend Developer
-                </p>
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Experience</h2>
             </div>
 
-            <div class="col-md-6 text-md-end">
-                <a href="https://github.com/LimPogi" target="_blank" rel="noopener noreferrer" class="text-white me-3">
-                    <i class="bi bi-github fs-4"></i>
-                </a>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Associate System Developer (Trainee)</h4>
+                    <h6 class="text-primary">Sumidenso Automotive Technologies Asia Corporation</h6>
+                    <p>
+                        • Learned C# and ASP.NET MVC<br>
+                        • Participated in software development discussions<br>
+                        • Assisted in maintaining internal applications<br>
+                        • Collaborated with developers
+                    </p>
+                </div>
 
-                <a href="https://www.linkedin.com/in/john-ronan-limjoco-a0085b400/" target="_blank" rel="noopener noreferrer" class="text-white me-3">
-                    <i class="bi bi-linkedin fs-4"></i>
-                </a>
-
-                <a href="https://www.facebook.com/LimjocoJohn6" target="_blank" rel="noopener noreferrer" class="text-white me-3">
-                    <i class="bi bi-facebook fs-4"></i>
-                </a>
+                <div class="timeline-item">
+                    <h4>Content Moderator</h4>
+                    <h6 class="text-primary">Teleperformance Clark</h6>
+                    <p>
+                        • Reviewed Marketplace listings<br>
+                        • Ensured policy compliance<br>
+                        • Maintained quality standards<br>
+                        • Worked in a fast-paced environment
+                    </p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <hr>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contact Me</h2>
+                <p>Feel free to reach out.</p>
+            </div>
 
-        <div class="text-center">
-            © 2026 John Ronan Limjoco. All Rights Reserved.
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-box shadow">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <i class="bi bi-envelope-fill fs-1"></i>
+                                <h5 class="mt-3">Email</h5>
+                                <p>cirolimjoco@gmail.com</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <i class="bi bi-telephone-fill fs-1"></i>
+                                <h5 class="mt-3">Phone</h5>
+                                <p>0919-316-4052</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <i class="bi bi-geo-alt-fill fs-1"></i>
+                                <h5 class="mt-3">Location</h5>
+                                <p>Pampanga, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5>John Ronan Limjoco</h5>
+                    <p>Junior Frontend Developer</p>
+                </div>
 
-<script>
-    (function () {
-        var root = document.documentElement;
-        var toggleBtn = document.getElementById('themeToggle');
-        var icon = toggleBtn.querySelector('i');
+                <div class="col-md-6 text-md-end">
+                    <a href="https://github.com/LimPogi" target="_blank" rel="noopener noreferrer" class="text-white me-3" aria-label="GitHub">
+                        <i class="bi bi-github fs-4"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-ronan-limjoco-a0085b400/" target="_blank" rel="noopener noreferrer" class="text-white me-3" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin fs-4"></i>
+                    </a>
+                    <a href="https://www.facebook.com/LimjocoJohn6" target="_blank" rel="noopener noreferrer" class="text-white me-3" aria-label="Facebook">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                </div>
+            </div>
 
-        function updateIcon(theme) {
-            icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
-        }
+            <hr>
 
-        // Icon reflects whatever theme was set by the early inline script
-        updateIcon(root.getAttribute('data-theme'));
+            <div class="text-center">
+                © 2026 John Ronan Limjoco. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
-        toggleBtn.addEventListener('click', function () {
-            var current = root.getAttribute('data-theme');
-            var next = current === 'dark' ? 'light' : 'dark';
-            root.setAttribute('data-theme', next);
-            localStorage.setItem('theme', next);
-            updateIcon(next);
-        });
-    })();
-</script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Theme Toggle Handler -->
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var toggleBtn = document.getElementById('themeToggle');
+            var icon = toggleBtn.querySelector('i');
+
+            function updateIcon(theme) {
+                icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+            }
+
+            // Sync icon on DOM load based on saved attribute
+            updateIcon(root.getAttribute('data-theme'));
+
+            toggleBtn.addEventListener('click', function () {
+                var current = root.getAttribute('data-theme');
+                var next = current === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                updateIcon(next);
+            });
+        })();
+    </script>
 </body>
+
 </html>
